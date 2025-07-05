@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+  background: #fff;
+  color: #003366;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 70px;
+  border-bottom: 4px solid #ffc907;
+  background: #fff;
+}
+.logo {
+  height: 40px;
+}
+.join-btn {
+  background: #ffc907;
+  color: #003366;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 7px;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: none;
+  margin-left: 1rem;
+  display: inline-block;
+}
+.join-btn:hover {
+  background: #e6b800;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  border-top: 4px solid #ffc907;
+}
+.hero-left {
+  background: #003366;
+  color: #fff;
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  min-width: 350px;
+}
+.hero-left h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+}
+.donate-btn {
+  background: #ffc907;
+  color: #003366;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 30px;
+  padding: 1em 2.5em;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  box-shadow: none;
+  transition: background 0.2s;
+}
+.donate-btn:hover {
+  background: #e6b800;
+}
+.subtext {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  max-width: 500px;
+}
+.hero-right {
+  flex: 1 1 400px;
+  min-width: 350px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: #fff;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 500px;
+  border-radius: 0 0 0 0;
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-right, .hero-left {
+    min-width: 0;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .hero-img {
+    max-height: 350px;
+  }
+} 
